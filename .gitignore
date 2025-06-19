@@ -1,0 +1,28 @@
+# Ignore MATLAB backup files
+*.asv
+*.autosave
+
+# Ignore user-specific MATLAB settings
+*.mat
+*.fig
+*.mdl
+*.slx
+*.log
+*.mex*
+
+# Ignore temporary and crash files
+.DS_Store
+Thumbs.db
+crash_dump.*
+
+# Ignore compiled files
+*.exe
+*.dll
+*.so
+*.out
+*.obj
+*.o
+
+# Ignore Jupyter & Python files if used later
+__pycache__/
+*.ipynb_checkpoints/
