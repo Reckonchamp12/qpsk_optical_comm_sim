@@ -3,7 +3,7 @@ addpath('utils');
 
 %% Simulation Parameters
 no_of_bits = 20000;
-samples_per_symbol = 5;
+samples_per_symbol = 9;
 SYMBOL_SIZE = no_of_bits / 2;
 bit_pattern = randi([0 1], 1, no_of_bits);
 
