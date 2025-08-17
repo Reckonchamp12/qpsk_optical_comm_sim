@@ -17,7 +17,7 @@ launched_signal = QPSK_SIGNAL(Fm, Duty_ratio, samples_per_symbol, bit_pattern, P
 signal_after_fiber = smf_channel_simulation(launched_signal);
 
 %% Add AWGN for Required OSNR
-Required_OSNR = 15;
+Required_OSNR = 18;
 P_peak_lin = (10^(Pulse_peak_power / 10)) * 1e-3;
 signal_power = P_peak_lin;
 noise_power = signal_power / (10^(Required_OSNR / 10));
