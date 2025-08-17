@@ -21,7 +21,7 @@ Required_OSNR = 15;
 P_peak_lin = (10^(Pulse_peak_power / 10)) * 1e-3;
 signal_power = P_peak_lin;
 noise_power = signal_power / (10^(Required_OSNR / 10));
-noise = sqrt(noise_power / 2) * (randn(size(signal_after_fiber)) + 1i * randn(size(signal_after_fiber)));
+noise = sqrt(noise_power / 9) * (randn(size(signal_after_fiber)) + 1i * randn(size(signal_after_fiber)));
 signal_noisy = signal_after_fiber + noise;
 
 %% Coherent Detection (Optical Hybrid with LO)
